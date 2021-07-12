@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <div id="highscoresDiv">
+            <button type="button" class="btn btn-info" id="highscores">
+      View highscores
+    </button>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="index.html" id="title">
+                <h3>Coding Quiz</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <div id="timerDiv">Time Left : <span id="timer"></span></div>
+    </header>
+
+    <div class="row" id="startDiv">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h3 class="my-0 font-weight-normal">Coding Quiz</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <p>Answer the following questions before time runs out, but be careful! Incorrect answers hurt your score AND your remaining time!</p>
+                        <p>Best of luck!</p>
+                    </ul>
+                    <button type="button" id="startQuiz" class="btn btn-lg btn-block btn-outline-info">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row" id="quizDiv">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header" id="quizQ"></div>
+                <div class="quiz-container">
+                    <div id="choiceBtns"></div>
+                    <div id="answer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="endQuiz">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h3 class="my-0 font-weight-normal">Coding Quiz</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <h3>Complete!  Your score: </h3>
+                        <h1 id="score"></h1>
+                    </ul>
+                    <div class="mx-auto order-0"></div>
+                    <input type="text" id="initials" placeholder="Please Enter your Initials..." />
+                    <button type="button" id="submit" class="btn btn-lg btn-block btn-outline-info">Submit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="row" id="startOver">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h3 class="my-0 font-weight-normal"></h3>Coding Quiz</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <h3>Try Again?</h3>
+                    </ul>
+                    <div id="restartDiv">
+                        <button type="button" id="restart" class="btn btn-lg btn-block btn-outline-info">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="scoresDiv" style="display: none">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h3 class="my-0 font-weight-normal">Scores:</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <div id="highscoreDisp">
+                        </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
